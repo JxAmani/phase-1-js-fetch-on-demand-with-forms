@@ -1,5 +1,4 @@
 const chai = require("chai");
 global.expect = chai.expect;
-const jsdom = require("mocha-jsdom");
 
-jsdom({});
+require("jsdom-global")(); // sets up window, document, etc.
